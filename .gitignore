@@ -1,0 +1,12 @@
+# 大文件不提交
+*.pdf
+*.docx
+个人照.jpg
+resume_preview.png
+KeyShot渲染图片.jpg
+
+# 系统文件
+.claude/
+.DS_Store
+Thumbs.db
+resume_text.txt
