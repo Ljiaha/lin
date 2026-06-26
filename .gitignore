@@ -1,12 +1,16 @@
-# 大文件不提交
+# 大文件
 *.pdf
 *.docx
 个人照.jpg
 resume_preview.png
-KeyShot渲染图片.jpg
 
-# 系统文件
+# 依赖
+node_modules/
+
+# 构建产物（gh-pages 单独管理）
+dist/
+
+# 系统
 .claude/
 .DS_Store
 Thumbs.db
-resume_text.txt

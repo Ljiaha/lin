@@ -1,0 +1,123 @@
+/* ============================================
+   Component-level hover effects & animations
+   ============================================ */
+
+/* Navbar link hover */
+.nav-link:hover {
+  color: var(--text-primary) !important;
+}
+
+/* Navbar CTA hover */
+.nav-cta:hover {
+  background: var(--text-primary);
+  color: var(--bg-primary) !important;
+  border-color: var(--text-primary);
+}
+
+/* Hero CTA buttons */
+.hero-cta {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+.hero-cta-secondary:hover {
+  color: var(--text-primary) !important;
+  border-color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Contact card hover */
+.contact-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-card:hover {
+  border-color: var(--border-strong) !important;
+  transform: translateY(-2px);
+  background: var(--bg-elevated) !important;
+}
+
+/* Rendering card hover */
+.rendering-card:hover {
+  border-color: var(--border-strong) !important;
+  transform: translateY(-2px);
+}
+.rendering-card:hover .rendering-img {
+  transform: scale(1.04);
+}
+
+/* Lightbox buttons */
+.lightbox-close-btn:hover,
+.lightbox-nav-btn:hover {
+  color: var(--text-primary) !important;
+}
+
+/* ============================================
+   Fade-in on scroll
+   ============================================ */
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+#hero {
+  animation-delay: 0s;
+}
+#projects {
+  animation-delay: 0.08s;
+}
+#renderings {
+  animation-delay: 0.16s;
+}
+#strengths {
+  animation-delay: 0.24s;
+}
+#contact {
+  animation-delay: 0.32s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   Large screen refinement (>= 1600px)
+   ============================================ */
+
+@media (min-width: 1600px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .section-heading {
+    font-size: 36px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  section {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
