@@ -17,7 +17,7 @@ const PROJECTS = [
       '重力补偿机构设计：零长弹簧（ZFL）+ 平行四边形机构优化 + 死点规避',
       '卡弹与机构抖动问题攻关：供弹路径改进 + 关键连接件刚度增强',
     ],
-    images: ['/images/image5.png', '/images/image6.png', '/images/image8.png'],
+    images: [`${import.meta.env.BASE_URL}images/image5.png`, `${import.meta.env.BASE_URL}images/image6.png`, `${import.meta.env.BASE_URL}images/image8.png`],
   },
   {
     id: 'wheel-leg',
@@ -35,7 +35,7 @@ const PROJECTS = [
       '项目进度管控：对接资源 + 加工装配调试全流程协调',
       '专利申报：技术交底书撰写与审核',
     ],
-    images: ['/images/image9.png', '/images/image10.png', '/images/7905eb2d4fb5ce655df6f8f6ecbfcaf4.png'],
+    images: [`${import.meta.env.BASE_URL}images/image9.png`, `${import.meta.env.BASE_URL}images/image10.png`, `${import.meta.env.BASE_URL}images/7905eb2d4fb5ce655df6f8f6ecbfcaf4.png`],
   },
   {
     id: 'robocon',
@@ -60,7 +60,7 @@ const PROJECTS = [
       'ROBOCON 仿生足式机器人挑战赛 障碍赛三等奖',
       '仿生足式机器人 最佳技术奖',
     ],
-    images: ['/images/image2.png', '/images/image3.jpeg', '/images/image4.png'],
+    images: [`${import.meta.env.BASE_URL}images/image2.png`, `${import.meta.env.BASE_URL}images/image3.jpeg`, `${import.meta.env.BASE_URL}images/image4.png`],
   },
 ]
 

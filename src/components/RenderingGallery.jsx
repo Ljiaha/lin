@@ -1,12 +1,14 @@
 import { useState, useEffect, useCallback } from 'react'
 
+const BASE = import.meta.env.BASE_URL
+
 const RENDERINGS = [
-  { src: '/images/keyshot-01.jpg', alt: 'KeyShot 渲染作品 1' },
-  { src: '/images/image7.jpeg', alt: '仿真渲染作品 2' },
-  { src: '/images/2ef58b4c1a4462ec375ddd183712d940.png', alt: '仿真渲染作品 3' },
-  { src: '/images/05b41450-e57b-4818-9662-9b04444225df.png', alt: '仿真渲染作品 4' },
-  { src: '/images/4.22.png', alt: '仿真渲染作品 5' },
-  { src: '/images/untitled.26.png', alt: '仿真渲染作品 6' },
+  { src: `${BASE}images/keyshot-01.jpg`, alt: 'KeyShot 渲染作品 1' },
+  { src: `${BASE}images/image7.jpeg`, alt: '仿真渲染作品 2' },
+  { src: `${BASE}images/2ef58b4c1a4462ec375ddd183712d940.png`, alt: '仿真渲染作品 3' },
+  { src: `${BASE}images/05b41450-e57b-4818-9662-9b04444225df.png`, alt: '仿真渲染作品 4' },
+  { src: `${BASE}images/4.22.png`, alt: '仿真渲染作品 5' },
+  { src: `${BASE}images/untitled.26.png`, alt: '仿真渲染作品 6' },
 ]
 
 export default function RenderingGallery() {
